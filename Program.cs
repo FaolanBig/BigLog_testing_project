@@ -14,14 +14,17 @@ namespace BigLog_testing_project
                 ColorMessage = true,
                 //AutoFlush = false
             };
-            Console.WriteLine("test");
-            Console.WriteLine(Path.GetFullPath(logger.FileName));
+            Console.WriteLine("start");
             logger.Inf("this is an info");
             logger.Suc("this is success");
             logger.War("this is a warning");
             logger.Err("this is an error");
             logger.Ctm("this is a custom message");
             //logger.flushCache();
+            /*for (int i = 0; i < 10000; i++)
+            {
+                logger.Inf(Convert.ToString(i));
+            }*/
             Console.WriteLine("end");
         }
     }
